@@ -10,11 +10,11 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity decoder_2x4 is
 
 	    port(
-			   a : in std_logic;
-			   b : in std_logic;
+		  a : in std_logic;
+		  b : in std_logic;
 		-- Outputs:
-f0, f1, f2, f3   : out std_logic;
-	    );
+   f0, f1, f2, f3   : out std_logic
+	         );
 end entity ;
 
 architecture arch of decoder_2x4 is
