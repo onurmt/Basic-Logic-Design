@@ -8,9 +8,8 @@ use IEEE.STD_LOGIC_1164.all;
 entity Dlatch is 
 
 	port (C, D : in std_logic; 
-	     Q, Qn : out std_logic
-		 
-		 ); 		 
+	     Q, Qn : out std_logic 
+	      ); 		 
 end entity; 
 	
 architecture arch of Dlatch is 
