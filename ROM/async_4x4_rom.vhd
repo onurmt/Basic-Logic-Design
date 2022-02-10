@@ -25,7 +25,6 @@ architecture arch of async_4x4_rom is
 								3 => "0100"
 							    ); 
 	begin
-
-		data_out <= ROM( to_integer (unsigned(address)) );
+		data_out <= ROM( to_integer ( unsigned(address)) );
 
 end architecture;
