@@ -19,7 +19,7 @@ architecture arch of Dff is
 	begin 
 		if (clk'event and clk = '1') then 
 			Q <= D; 
-		   Qn <= not D; 
+		       Qn <= not D; 
 		end if; 
 		
 	end process; 
