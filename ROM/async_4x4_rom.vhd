@@ -19,11 +19,11 @@ architecture arch of async_4x4_rom is
 
 	type ROM_type is array (0 to 3) of std_logic_vector(3 downto 0); 
 
-	constant ROM : ROM_type := (0 => "1110",
-	                            1 => "0010", 
-								2 => "1111", 
-								3 => "0100"
-							    ); 
+	constant ROM : ROM_type := ( 0 => "1110",
+	                             1 => "0010", 
+			             2 => "1111", 
+				     3 => "0100"
+				    ); 
 	begin
 		data_out <= ROM( to_integer (unsigned(address)) );
 
