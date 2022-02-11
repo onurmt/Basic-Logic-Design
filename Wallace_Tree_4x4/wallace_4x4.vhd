@@ -8,39 +8,41 @@ use IEEE.NUMERIC_STD.ALL;
 -- For '+' Operator
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-	entity wallace_4x4 is
+entity wallace_4x4 is
 	port(
 		A_in : in std_logic_vector(3 downto 0);
 		B_in : in std_logic_vector(3 downto 0);
 		-- Output
-	  result : out std_logic_vector(7 downto 0)
+	      result : out std_logic_vector(7 downto 0)
 	  
 	);
-	end entity;
+end entity;
 	
-	architecture arch of wallace_4x4 is 
+architecture arch of wallace_4x4 is 
 	-- HALF ADDER COMPONENT
 	component half_adder is
 
-		port(
-			a : in std_logic;
-			b : in std_logic;
-			-- Outputs:
-		sum   : out std_logic;
-		carry : out std_logic
-		);
+	port(
+	        a : in std_logic;
+		b : in std_logic;
+		
+	    -- Outputs
+	    sum   : out std_logic;
+	    carry : out std_logic
+	    );
 	end component ;
 	-- FULL ADDER COMPONENT
 	component full_adder is
 
-		port(
-			a : in std_logic;
-			b : in std_logic;
-			c : in std_logic;
-			-- Outputs:
-		sum   : out std_logic;
-		carry : out std_logic
-		);
+	port(
+		a : in std_logic;
+		b : in std_logic;
+		c : in std_logic;
+		
+	    -- Outputs
+	    sum   : out std_logic;
+	    carry : out std_logic
+	    );
 	end component ;
 	
 	-- Process Signals:
@@ -106,4 +108,4 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 	
 	-- Final Addition: 
 	result <= adder_line1 + adder_line2;
-	end architecture;
+end architecture;
