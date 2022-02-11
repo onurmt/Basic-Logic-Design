@@ -9,13 +9,13 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 -- FULL SUBTRACTOR
 entity full_subtractor is
 
-	port(
+   port(
 		a : in std_logic;
 		b : in std_logic;
 		c : in std_logic;
 		-- Outputs:
-		diff   : out std_logic;
-		borrow : out std_logic
+	   diff   : out std_logic;
+           borrow : out std_logic
 	);
 end entity ;
 
