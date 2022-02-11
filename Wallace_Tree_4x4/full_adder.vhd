@@ -12,9 +12,10 @@ entity full_adder is
 		a : in std_logic;
 		b : in std_logic;
 		c : in std_logic;
-		-- Outputs:
-		sum   : out std_logic;
-		carry : out std_logic
+		
+	    -- Outputs
+	    sum   : out std_logic;
+	    carry : out std_logic
 	);
 end entity ;
 
