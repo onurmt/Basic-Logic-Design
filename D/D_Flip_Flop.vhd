@@ -14,7 +14,7 @@ end entity;
  
 architecture arch of Dff is 
 	begin 
-		D_FLIP_FLOP : process (clk) 
+		Dff_proc : process (clk) 
 		
 	begin 
 		if (clk'event and clk = '1') then 
