@@ -2,8 +2,8 @@
 -- HALF ADDER 
 -------------------------------
 library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
 
 -- HALF ADDER
 entity half_adder is
@@ -11,9 +11,10 @@ entity half_adder is
 	port(
 		a : in std_logic;
 		b : in std_logic;
-		-- Outputs:
-		sum   : out std_logic;
-		carry : out std_logic
+		
+	    -- Outputs
+	    sum   : out std_logic;
+	    carry : out std_logic
 	);
 end entity ;
 
