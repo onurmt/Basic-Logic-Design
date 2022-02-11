@@ -18,14 +18,14 @@ entity decoder_7seg is
 end entity ;
 
 architecture arch of decoder_7seg is
-
-  begin 
+begin 
    f <= "1111110" when (abc = "000") else 
-		"0110000" when (abc = "001") else 
-		"1101101" when (abc = "010") else 
-		"1111001" when (abc = "011") else 
-		"0110011" when (abc = "100") else 
-		"1011011" when (abc = "101") else
-		"1011111" when (abc = "110") else 
-		"1110000" when (abc = "111"); 
+	"0110000" when (abc = "001") else 
+	"1101101" when (abc = "010") else 
+	"1111001" when (abc = "011") else 
+	"0110011" when (abc = "100") else 
+	"1011011" when (abc = "101") else
+	"1011111" when (abc = "110") else 
+	"1110000" when (abc = "111"); 
+		
 end architecture;
