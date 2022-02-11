@@ -8,13 +8,12 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- 4x1 MULTIPLEXER
 entity mux_4x1 is
-	port(
+port(
     a, b, c, d : in std_logic;
              s : in std_logic_vector(1 downto 0);
-		-- Output
+	-- Output
 	   f   : out std_logic
-	    );
-	
+     );	
 end entity ;
 
 architecture arch of mux_4x1 is
