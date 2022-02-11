@@ -26,5 +26,6 @@ begin
 	       "00010000" when (abc = "100") else 
 	       "00100000" when (abc = "101") else 
 	       "01000000" when (abc = "110") else 
-	       "10000000" when (abc = "111"); 	   		       
+	       "10000000" when (abc = "111"); 	
+		       
 end architecture;
