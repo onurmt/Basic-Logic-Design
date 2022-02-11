@@ -15,24 +15,23 @@ end tb_full_subtractor;
 architecture Behavioral of tb_full_subtractor is
 component full_subtractor is
 	port( 
-			a, b, c : in std_logic;
-			-- Output
+		a, b, c : in std_logic;
+		-- Output
 	  diff, borrow  : out std_logic
-		);
-		
-	end component;
+		);	
+end component;
 
 signal a, b, c, diff, borrow : std_logic;
 
 begin
 
 uut: full_subtractor port map(
-		 a => a, 
-		 b => b, 
-		 c => c,
-	  diff => diff,
-	borrow => borrow
-	);
+	 a => a, 
+	 b => b, 
+	 c => c,
+      diff => diff,
+    borrow => borrow
+	   );
 	
 -- Test Case 
 stim_proc: process
