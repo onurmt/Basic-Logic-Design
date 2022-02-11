@@ -8,12 +8,12 @@ use IEEE.numeric_std.all;
 -- HALF SUBTRACTOR
 entity half_subtractor is
 
-	port(
+   port(
 		a : in std_logic;
 		b : in std_logic;
 		-- Outputs:
-		diff   : out std_logic;
-		borrow : out std_logic
+	   diff   : out std_logic;
+	   borrow : out std_logic
 	);
 end entity ;
 
