@@ -10,9 +10,10 @@ entity async_4x4_rom is
 
 	port(
        address : in std_logic_vector(1 downto 0); 
-	   -- Output
+		
+        -- Output
       data_out : out std_logic_vector(3 downto 0)
-		); 
+	     ); 
 end entity; 
 
 architecture arch of async_4x4_rom is 
