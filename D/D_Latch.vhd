@@ -14,14 +14,13 @@ end entity;
 	
 architecture arch of Dlatch is 
 	begin 
-		D_LATCH : process (C, D) 
-		
+		D_Latch_proc : process (C, D) 	
 	begin 	
 		if (C = '1') then 
 		   Q <= D; 
-	      Qn <= not D;   
-	    end if;
-		
+	          Qn <= not D;   
+	        end if;
+			
 	end process; 
 	
 end architecture; 
