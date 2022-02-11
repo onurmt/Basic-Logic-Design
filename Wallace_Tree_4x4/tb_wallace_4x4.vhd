@@ -16,10 +16,9 @@ component  wallace_4x4 is
 		A_in : in std_logic_vector(3 downto 0 );
 		B_in : in std_logic_vector(3 downto 0 );
 		-- Output
-	  result : out std_logic_vector(7 downto 0 )	  
-	);
-	
-	end component;
+	      result : out std_logic_vector(7 downto 0 )	  
+	     );
+end component;
 	
 signal  A_in : std_logic_vector(3 downto 0 );
 signal  B_in : std_logic_vector(3 downto 0 );
