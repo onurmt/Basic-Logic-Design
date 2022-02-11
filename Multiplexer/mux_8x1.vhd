@@ -8,7 +8,6 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- 8x1 MULTIPLEXER
 entity mux_8x1 is
-
 	port(
 a, b, c, d, e, g, h, k : in std_logic;
                      s : in std_logic_vector(2 downto 0);
