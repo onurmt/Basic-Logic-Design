@@ -8,17 +8,18 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- 7 SEGMENT DISPLAY DECODER
 entity decoder_7seg is
-
+	
 	port(
 	 abc : in std_logic_vector(2 downto 0);	
-	-- Outputs
-       f : out std_logic_vector(6 downto 0)
-		
-	);
+	-- Output
+           f : out std_logic_vector(6 downto 0)	
+	    );
+	
 end entity ;
 
 architecture arch of decoder_7seg is
 begin 
+	
    f <= "1111110" when (abc = "000") else 
 	"0110000" when (abc = "001") else 
 	"1101101" when (abc = "010") else 
